@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"2222\startup_stm32f429xx.o"
+"2222\main.o"
+"2222\gpio.o"
+"2222\usart.o"
+"2222\stm32f4xx_it.o"
+"2222\stm32f4xx_hal_msp.o"
+"2222\stm32f4xx_hal_tim.o"
+"2222\stm32f4xx_hal_tim_ex.o"
+"2222\stm32f4xx_hal_uart.o"
+"2222\stm32f4xx_hal_rcc.o"
+"2222\stm32f4xx_hal_rcc_ex.o"
+"2222\stm32f4xx_hal_flash.o"
+"2222\stm32f4xx_hal_flash_ex.o"
+"2222\stm32f4xx_hal_flash_ramfunc.o"
+"2222\stm32f4xx_hal_gpio.o"
+"2222\stm32f4xx_hal_dma_ex.o"
+"2222\stm32f4xx_hal_dma.o"
+"2222\stm32f4xx_hal_pwr.o"
+"2222\stm32f4xx_hal_pwr_ex.o"
+"2222\stm32f4xx_hal_cortex.o"
+"2222\stm32f4xx_hal.o"
+"2222\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "2222\2222.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "2222.map" -o 2222\2222.axf

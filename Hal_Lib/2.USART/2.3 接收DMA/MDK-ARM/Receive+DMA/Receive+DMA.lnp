@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"receive+dma\startup_stm32f429xx.o"
+"receive+dma\main.o"
+"receive+dma\gpio.o"
+"receive+dma\dma.o"
+"receive+dma\usart.o"
+"receive+dma\stm32f4xx_it.o"
+"receive+dma\stm32f4xx_hal_msp.o"
+"receive+dma\stm32f4xx_hal_tim.o"
+"receive+dma\stm32f4xx_hal_tim_ex.o"
+"receive+dma\stm32f4xx_hal_uart.o"
+"receive+dma\stm32f4xx_hal_rcc.o"
+"receive+dma\stm32f4xx_hal_rcc_ex.o"
+"receive+dma\stm32f4xx_hal_flash.o"
+"receive+dma\stm32f4xx_hal_flash_ex.o"
+"receive+dma\stm32f4xx_hal_flash_ramfunc.o"
+"receive+dma\stm32f4xx_hal_gpio.o"
+"receive+dma\stm32f4xx_hal_dma_ex.o"
+"receive+dma\stm32f4xx_hal_dma.o"
+"receive+dma\stm32f4xx_hal_pwr.o"
+"receive+dma\stm32f4xx_hal_pwr_ex.o"
+"receive+dma\stm32f4xx_hal_cortex.o"
+"receive+dma\stm32f4xx_hal.o"
+"receive+dma\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Receive+DMA\Receive+DMA.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Receive+DMA.map" -o Receive+DMA\Receive+DMA.axf

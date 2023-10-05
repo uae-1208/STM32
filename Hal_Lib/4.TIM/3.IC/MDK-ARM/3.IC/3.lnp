@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"3.ic\startup_stm32f429xx.o"
+"3.ic\main.o"
+"3.ic\gpio.o"
+"3.ic\tim.o"
+"3.ic\usart.o"
+"3.ic\stm32f4xx_it.o"
+"3.ic\stm32f4xx_hal_msp.o"
+"3.ic\stm32f4xx_hal_tim.o"
+"3.ic\stm32f4xx_hal_tim_ex.o"
+"3.ic\stm32f4xx_hal_rcc.o"
+"3.ic\stm32f4xx_hal_rcc_ex.o"
+"3.ic\stm32f4xx_hal_flash.o"
+"3.ic\stm32f4xx_hal_flash_ex.o"
+"3.ic\stm32f4xx_hal_flash_ramfunc.o"
+"3.ic\stm32f4xx_hal_gpio.o"
+"3.ic\stm32f4xx_hal_dma_ex.o"
+"3.ic\stm32f4xx_hal_dma.o"
+"3.ic\stm32f4xx_hal_pwr.o"
+"3.ic\stm32f4xx_hal_pwr_ex.o"
+"3.ic\stm32f4xx_hal_cortex.o"
+"3.ic\stm32f4xx_hal.o"
+"3.ic\stm32f4xx_hal_uart.o"
+"3.ic\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "3.IC\3.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3.map" -o 3.IC\3.IC
